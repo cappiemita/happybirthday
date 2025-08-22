@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #ff4500;
+        }
+        p {
+            font-size: 1.2em;
+            color: #48658b;
+        }
+        .image {
+            width: 300px;
+            height: 300px;
+            border-radius: 0%;
+            margin: 20px auto;
+            background-image: url('图片2.jpg');
+            background-size: cover;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #ff4500;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #e03c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>生日快乐！</h1>
+        <div class="image"></div>
+        <p>亲爱的老爸，在这特别的日子里，祝你生日快乐！愿你的每一天都充满阳光和欢笑，所有的梦想都能实现。</p>
+        <button class="button">查看祝福</button>
+    </div>
+    <script>
+        document.querySelector('.button').addEventListener('click', function() {
+            alert('51岁生日快乐！');
+        });
+    </script>
+</body>
+</html>
